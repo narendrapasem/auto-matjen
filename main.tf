@@ -8,8 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  profile = "default"
-  region  = "us-east-1"
-  //access_key = "AKIAQKHHME6VY7BG4RWN"
-  //secret_key = "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"
+   region = var.aws_region
+   shared_credentials_file = "/Users/samueldare/.aws/credentials"
+   profile = "default"
 }
